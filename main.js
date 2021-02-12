@@ -160,7 +160,7 @@ function displayCart() {
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="products">
-                <button class="btn id="delete">delete<i class="far fa-times-circle"></i></button>
+                <i class="far fa-times-circle"></i>
             
                 <img id="cartImage" src="${item.tag}.jpg">
                 <span id="spanner">${item.model}</span>
@@ -180,19 +180,8 @@ function displayCart() {
                 </div>
                  
             </div>
-            
             `
-            let deleteBtn = document.getElementsByClassName("btn");
-            Array.prototype.slice.call(deleteBtn).forEach(function(item) {
-             item.addEventListener("click", function(e) {
-                e.target.parentNode.remove()
-            });
-        
-            })
         });
-
-
-
 
         productContainer.innerHTML += `
 
