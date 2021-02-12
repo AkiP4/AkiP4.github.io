@@ -5,21 +5,21 @@ let products = [
     {
         model: 'AMD Radeon 5700 XT',
         price: 459,
-        image: '.resources/Images/amd5700xt.jpg',
+        image: 'resources/Images/amd5700xt.jpg',
         inCart: 0,
         tag: 'amd5700xt'
     },
     {
         model: 'ASUS GeForce RTX 3070 8GB DUAL',
         price: 599,
-        image: '.resources/Images/asus3070dual.jpg',
+        image: 'resources/Images/asus3070dual.jpg',
         inCart: 0,
         tag: 'asus3070dual'
     },
     {
         model: 'MSI GeForce RTX 3070 Ventus 3X OC',
         price: 619,
-        image: '.resources/Images/msi3070ventus.jpg',
+        image: 'resources/Images/msi3070ventus.jpg',
         inCart: 0,
         tag: 'msi3070ventus'
     },
