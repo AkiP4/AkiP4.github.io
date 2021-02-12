@@ -5,63 +5,63 @@ let products = [
     {
         model: 'AMD Radeon 5700 XT',
         price: 459,
-        image: 'resources/Images/amd5700xt.jpg',
+        image: 'resources/images/amd5700xt.jpg',
         inCart: 0,
         tag: 'amd5700xt'
     },
     {
         model: 'ASUS GeForce RTX 3070 8GB DUAL',
         price: 599,
-        image: 'resources/Images/asus3070dual.jpg',
+        image: 'resources/images/asus3070dual.jpg',
         inCart: 0,
         tag: 'asus3070dual'
     },
     {
         model: 'MSI GeForce RTX 3070 Ventus 3X OC',
         price: 619,
-        image: 'resources/Images/msi3070ventus.jpg',
+        image: 'resources/images/msi3070ventus.jpg',
         inCart: 0,
         tag: 'msi3070ventus'
     },
     {
         model: 'ASUS GeForce RTX 3070 8GB GDDR6 DUAL OC',
         price: 619,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/images/302003-b303045_300x300.jpg',
         inCart: 0,
         tag: 'asus3070dualoc'
     },
     {
         model: 'GeForce RTX3070 GamingPro',
         price: 639,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/images/302003-b303045_300x300.jpg',
         inCart: 0,
         tag: 'asus3070gpro'
     },
     {
         model: 'ASUS TUF GAMING GeForce RTX™ 3070 OC Edition 8GB GDDR6',
         price: 669,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/images/302003-b303045_300x300.jpg',
         inCart: 0,
         tag: 'asus3070tuf'
     },
     {
         model: 'EVGA GeForce RTX 3070 XC3 BLACK',
         price: 619,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/images/302003-b303045_300x300.jpg',
         inCart: 0,
         tag: 'evga3070xc3'
     },
     {
         model: 'ASUS ROG STRIX RTX3090 O24G GAMING',
         price: 1889,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/images/302003-b303045_300x300.jpg',
         inCart: 0,
         tag: 'asus3090strix'
     },
     {
         model: 'ASUS GeForce RTX 3070 8GB GDDR6 ROG STRIX GAMING',
         price: 719,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/images/302003-b303045_300x300.jpg',
         inCart: 0,
         tag: 'asus3070strix'
     },
