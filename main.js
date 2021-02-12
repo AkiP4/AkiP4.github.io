@@ -12,14 +12,14 @@ let products = [
     {
         model: 'ASUS GeForce RTX 3070 8GB DUAL',
         price: 599,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/Images/asus3070dual.jpg',
         inCart: 0,
         tag: 'asus3070dual'
     },
     {
         model: 'MSI GeForce RTX 3070 Ventus 3X OC',
         price: 619,
-        image: 'resources/Images/302003-b303045_300x300.jpg',
+        image: 'resources/msi3070ventus.jpg',
         inCart: 0,
         tag: 'msi3070ventus'
     },
