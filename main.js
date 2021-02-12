@@ -5,7 +5,7 @@ let products = [
     {
         model: 'AMD Radeon 5700 XT',
         price: 459,
-        image: '.resources/images/amd5700xt.jpg',
+        image: 'amd5700xt.jpg',
         inCart: 0,
         tag: 'amd5700xt'
     },
