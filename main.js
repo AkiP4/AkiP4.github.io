@@ -162,7 +162,7 @@ function displayCart() {
             <div class="products">
                 <i class="far fa-times-circle"></i>
             
-                <img id="cartImage" src=".resources/images/${item.tag}.jpg">
+                <img id="cartImage" src="${item.tag}.jpg">
                 <span id="spanner">${item.model}</span>
                 
                 <div class="price">
