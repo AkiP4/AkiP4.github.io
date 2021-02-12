@@ -191,7 +191,6 @@ h3 {
 
 .total {
     width: 12%;
-    border-bottom: 4px solid lightgrey;
     display: flex;
     align-items: center;
     margin-left: 30%;
@@ -240,9 +239,7 @@ h3 {
 }
 
 .price {
-    display: flex;
-    font-size: 15px;
-    color: red;  
+    display: flex;  
     align-items: center;
     margin-left: 10%;
     position: relative;
