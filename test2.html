@@ -46,24 +46,33 @@ Sprite.prototype.render = function() {
   }
 }
 
-class test {
-  constructor(startX, startY, width, height, speed, color) {
+class Test {
+  constructor(x, y, width, height, speed, color) {
     this.width = width;
     this.height = height;
-    this.startX = startX;
-    this.startY = startY;
+    this.x = x;
+    this.y = y;
     this.speed = speed;
+    this.color = color;
   }
 
-  update() {
+  testDraw() {
+    context.beginPath();
+    context.arc(this.x, this.x, this.width, this.height, this.speed)
+    context.fillStyle = this.color;
+    context.fill();
+  }
+
+  testUpdate() {
     this.x += this.speed;
   }
 
-  draw() {
-    this.x, this.y;
-  }
-
 }
+
+const object = new Test(300, 300, 250, 250, 1) 
+
+
+
 
   //frogger :D
 
@@ -221,6 +230,72 @@ const log1_2 = new Sprite({
   shape: 'rect'
 })
 
+const log2 = new Sprite({
+  x: grid *11,
+  y: grid * 5,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+const log2_2 = new Sprite({
+  x: grid *3,
+  y: grid * 5,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+const log3 = new Sprite({
+  x: grid *13,
+  y: grid * 4,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+const log3_2 = new Sprite({
+  x: grid *5,
+  y: grid * 4,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+const log4 = new Sprite({
+  x: grid *16,
+  y: grid * 3,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+
+const log4_2 = new Sprite({
+  x: grid *6,
+  y: grid * 3,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+const log5 = new Sprite({
+  x: grid *3,
+  y: grid * 2,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
+
+const log5_2 = new Sprite({
+  x: grid *12,
+  y: grid * 2,
+  color: 'darkorange',
+  size: grid*6,
+  shape: 'rect'
+})
+
 // game loop
 function loop() {
   requestAnimationFrame(loop);
@@ -366,9 +441,58 @@ function loop() {
     log1_2.x = -grid*6
   }
 
+  //log lane 6 rendering
+
+  log2.x -= 1;
+  log2.render();
+  if (log2.x <= -canvas.width/2 ) {
+    log2.x = grid*13
+  }
+
+  log2_2.x -= 1;
+  log2_2.render();
+  if (log2_2.x <= -canvas.width/2 ) {
+    log2_2.x = grid*13
+  }
+
+  log3.x += 1;
+  log3.render();
+  if (log3.x >= canvas.width) {
+    log3.x = -grid*6
+  }
+
+  log3_2.x += 1;
+  log3_2.render();
+  if (log3_2.x >= canvas.width) {
+    log3_2.x = -grid*6
+  }
+
+  log4.x -= 1;
+  log4.render();
+  if (log4.x <= -canvas.width/2 ) {
+    log4.x = grid*13
+  }
+
+  log4_2.x -= 1;
+  log4_2.render();
+  if (log4_2.x <= -canvas.width/2 ) {
+    log4_2.x = grid*13
+  }
+
+  log5.x += 1;
+  log5.render();
+  if (log5.x >= canvas.width) {
+    log5.x = -grid*6
+  }
+
+  log5_2.x += 1;
+  log5_2.render();
+  if (log5_2.x >= canvas.width) {
+    log5_2.x = -grid*6
+  }
 
   //
-  // primitive hitboxes for the cars on lane 1 (could've used arrays on this)
+  // primitive hitboxes for the cars on lane 1
   //
 
   if (frogger.x == car1.x + gridGap && frogger.y == car1.y) {
@@ -439,7 +563,7 @@ function loop() {
 
     // hitbox lane 5
 
-  if (frogger.x == car5.x + gridGap && frogger.y == car5.y) {
+  if (frogger.x == (car5.x + grid) + gridGap && frogger.y == car5.y) {
     frogger.x = grid * 6
     frogger.y = grid * 13;
   }
@@ -457,11 +581,16 @@ function loop() {
     // hitbox water
 
   if (frogger.x == log1.x) {
-    frogger.speed = log1.speed
+    frogger.speed == log1.speed
   }
 
-  new test(100, 100, 50, 50, 1)
+  if (frogger.y == grid * 1) {
+    frogger.x = grid * 6
+    frogger.y = grid * 13;
+  }
 
+  frogger.x += frogger.speed || 0;
+  frogger.render();
 
 }
 
